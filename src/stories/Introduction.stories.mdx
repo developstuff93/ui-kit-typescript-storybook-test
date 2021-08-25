@@ -1,0 +1,100 @@
+import { Meta } from "@storybook/addon-docs";
+import Code from "./assets/code-brackets.svg";
+import Colors from "./assets/colors.svg";
+import Comments from "./assets/comments.svg";
+import Direction from "./assets/direction.svg";
+import Flow from "./assets/flow.svg";
+import Plugin from "./assets/plugin.svg";
+import Repo from "./assets/repo.svg";
+import StackAlt from "./assets/stackalt.svg";
+import Branding from "./assets/button-brands.png";
+import BaseButton from "./assets/default-button.png";
+
+<Meta title="ReadMe/Introduction" />
+
+<style>{`
+  .subheading {
+    --mediumdark: '#999999';
+    font-weight: 900;
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 6px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 40px;
+  }
+  
+  .eyebrow {
+    --mediumdark: '#999999';
+    font-weight: 900;
+    font-size: 11px;
+    color: #999;
+    letter-spacing: 1px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    margin-top: 40px;
+  }
+
+  .box {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border-radius: 2px;
+    margin-left:  10px;
+  }
+
+  .brand-one {
+    background-color:  #59679D;
+  }
+  
+  .brand-two {
+    background-color:  #0076d6;
+  }
+
+  .base-color {
+    background-color:  #1b1b1b;
+  }
+  .base-light {
+    background-color:  #a9aeb1;
+  }
+  .base-lightest {
+    background-color:  #dfe1e2;
+  }
+
+  .branding-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    display:  flex;
+    gap: 16px;
+  }
+`}</style>
+
+# UI Kit Assessment
+
+Testing knowledge around the following technologies: React/TypeScript, TailwindCSS, Storybook and theming.
+
+Create a basic theme with the following tokens:
+
+- first Brand color: #59679D <span className="box brand-one"></span>
+- second Brand color: #0076d6 <span className="box brand-two"></span>
+- base color: #1b1b1b <span className="box base-color"></span>
+- base lightest: #dfe1e2 <span className="box base-lightest"></span>
+- base light: #a9aeb1 <span className="box base-light"></span>
+
+Create a re-usable button that can change based off of the selected "theme"
+
+Create a story for the button.
+
+<div className="subheading">Branding Assets</div>
+
+<div className="branding-container">
+  <div>
+    <h3 className="eyebrow">Brand Options + Types</h3>
+    <img src={Branding} alt="brand" />
+  </div>
+  <div>
+    <h3 className="eyebrow">Default State</h3>
+    <img src={BaseButton} alt="brand" />
+  </div>
+</div>

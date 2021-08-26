@@ -1,5 +1,6 @@
 import React from "react";
-import { BtnProps, Button } from "./Button";
+import { Button } from "./Button";
+import { BtnBrandOptions, BtnProps, BtnTypeOptions } from "./types";
 
 /**
  * Write stories showing all variations of button with abilitiy to customize args
@@ -10,9 +11,6 @@ export default {
   title: "Application/Component Library/Button",
   component: Button,
 };
-
-const btnTypeOptions = ["primary", "secondary", "disabled"];
-const btnBrandOptions = ["first", "second"];
 
 interface Props extends BtnProps {
   text: string;
@@ -39,14 +37,14 @@ Typical.argTypes = {
     name: "Type",
     control: {
       type: "radio",
-      options: btnTypeOptions,
+      options: BtnTypeOptions,
     },
   },
   brand: {
     name: "Brand",
     control: {
       type: "radio",
-      options: btnBrandOptions,
+      options: BtnBrandOptions,
     },
   },
   onClick: {

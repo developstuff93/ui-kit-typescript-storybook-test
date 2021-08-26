@@ -1,5 +1,6 @@
 import React from "react";
 import classnames from "classnames";
+import { BtnProps } from "./types";
 import "./index.css";
 
 /**
@@ -9,14 +10,6 @@ import "./index.css";
  * - User should be able to control the text inside the button
  * - User should be able to add custom click event
  */
-
-export interface BtnProps {
-  type?: "primary" | "secondary" | "disabled";
-  brand?: "first" | "second";
-  children: React.ReactNode;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
-  className?: string;
-}
 
 const getBtnProperties = (brand?: string, type?: string) => {
   const colors = {
